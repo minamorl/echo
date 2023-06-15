@@ -20,7 +20,7 @@ To set up Echo on your Discord server, follow these steps:
 
  `.env`
 ```sh
-    DISCORD_TOKEN=your-discord-token
+DISCORD_BOT_TOKEN=your-discord-token
 ```
 Make sure to replace your-discord-token with your actual Discord bot token.
 
