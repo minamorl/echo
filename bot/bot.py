@@ -14,7 +14,6 @@ class MyClient(Client):
         if message.author == self.user:
             return
 
-        if message.content.startswith('/chatgpt'):
-            user_message = message.content[9:]
-            result = self.gpt_helper.chat_completion(user_message)
-            await message.channel.send(result)
+        user_message = message.content
+        result = await self.gpt_helper.chat_completion(user_message)
+        await message.channel.send(result)
